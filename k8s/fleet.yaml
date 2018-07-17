@@ -1,0 +1,21 @@
+apiVersion: "stable.agones.dev/v1alpha1"
+kind: Fleet
+metadata:
+  name: fleet-example
+spec:
+  replicas: 3
+  template:
+    # GameServer specification
+    spec:
+      portPolicy: "dynamic"
+      containerPort: 9410
+      health:
+        initialDelaySeconds: 60
+        periodSeconds: 10
+      # The GameServer's Pod template
+      template:
+        spec:
+          containers:
+          - name: game
+            image: bosakmaw/godot-agones:latest
+            imagePullPolicy: Always

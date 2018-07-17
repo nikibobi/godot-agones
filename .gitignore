@@ -1,0 +1,11 @@
+.vscode/
+.sconsign.dblite
+.import/
+include/
+example/export/
+
+*.os
+*.o
+*.so
+*.so.*
+*.a

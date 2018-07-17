@@ -1,0 +1,8 @@
+apiVersion: "stable.agones.dev/v1alpha1"
+kind: FleetAllocation
+metadata:
+  # generate a unique name
+  # will need to be created with `kubectl create`
+  generateName: fleet-example-alloc-
+spec:
+  fleetName: fleet-example

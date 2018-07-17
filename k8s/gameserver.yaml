@@ -1,0 +1,16 @@
+apiVersion: "stable.agones.dev/v1alpha1"
+kind: GameServer
+metadata:
+  name: gameserver-example
+spec:
+  portPolicy: "dynamic"
+  containerPort: 9410
+  health:
+    initialDelaySeconds: 60
+    periodSeconds: 10
+  template:
+    spec:
+      containers:
+      - name: game
+        image: bosakmaw/godot-agones:latest
+        imagePullPolicy: Always

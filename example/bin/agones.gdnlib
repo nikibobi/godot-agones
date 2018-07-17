@@ -1,0 +1,20 @@
+[general]
+
+singleton=false
+load_once=true
+symbol_prefix="godot_"
+reloadable=false
+
+[entry]
+
+OSX.64="res://bin/osx/libagones.dylib"
+Windows.64="res://bin/win64/libagones.dll"
+X11.64="res://bin/x11/libagones.so"
+Server.64="res://bin/x11/libagones.so"
+
+[dependencies]
+
+OSX.64=[  ]
+Windows.64=[  ]
+X11.64=[ "res://bin/x11/lib/libagonessdk.so", "res://bin/x11/lib/libgpr.so", "res://bin/x11/lib/libgrpc++.so", "res://bin/x11/lib/libgrpc++_cronet.so", "res://bin/x11/lib/libgrpc++_error_details.so", "res://bin/x11/lib/libgrpc++_reflection.so", "res://bin/x11/lib/libgrpc++_unsecure.so", "res://bin/x11/lib/libgrpc.so", "res://bin/x11/lib/libgrpc_cronet.so", "res://bin/x11/lib/libgrpc_unsecure.so", "res://bin/x11/lib/libprotobuf-lite.so", "res://bin/x11/lib/libprotobuf.so", "res://bin/x11/lib/libprotoc.so" ]
+Server.64=[ "res://bin/x11/lib/libagonessdk.so", "res://bin/x11/lib/libgpr.so", "res://bin/x11/lib/libgrpc++.so", "res://bin/x11/lib/libgrpc++_cronet.so", "res://bin/x11/lib/libgrpc++_error_details.so", "res://bin/x11/lib/libgrpc++_reflection.so", "res://bin/x11/lib/libgrpc++_unsecure.so", "res://bin/x11/lib/libgrpc.so", "res://bin/x11/lib/libgrpc_cronet.so", "res://bin/x11/lib/libgrpc_unsecure.so", "res://bin/x11/lib/libprotobuf-lite.so", "res://bin/x11/lib/libprotobuf.so", "res://bin/x11/lib/libprotoc.so" ]
