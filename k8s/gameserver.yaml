@@ -3,8 +3,10 @@ kind: GameServer
 metadata:
   name: gameserver-example
 spec:
-  portPolicy: "dynamic"
-  containerPort: 9410
+  ports:
+  - name: default
+    portPolicy: "dynamic"
+    containerPort: 9410
   health:
     initialDelaySeconds: 60
     periodSeconds: 10
