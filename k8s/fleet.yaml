@@ -3,7 +3,7 @@ kind: Fleet
 metadata:
   name: fleet-example
 spec:
-  replicas: 3
+  replicas: 10
   scheduling: Distributed
   template:
     # GameServer specification
@@ -19,5 +19,4 @@ spec:
         spec:
           containers:
           - name: game
-            image: bosakmaw/godot-agones:latest
-            imagePullPolicy: Always
+            image: bosakmaw/godot-agones:v0.7.0
