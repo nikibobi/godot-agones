@@ -4,6 +4,7 @@ metadata:
   name: fleet-example
 spec:
   replicas: 3
+  scheduling: Distributed
   template:
     # GameServer specification
     spec:
@@ -12,8 +13,7 @@ spec:
         portPolicy: "dynamic"
         containerPort: 9410
       health:
-        initialDelaySeconds: 60
-        periodSeconds: 10
+        disabled: true
       # The GameServer's Pod template
       template:
         spec:
