@@ -4,3 +4,6 @@
 [submodule "godot-cpp"]
 	path = godot-cpp
 	url = https://github.com/GodotNativeTools/godot-cpp
+[submodule "example"]
+	path = example
+	url = git@github.com:nikibobi/godot-agones-example.git
