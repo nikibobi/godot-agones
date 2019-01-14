@@ -29,6 +29,7 @@ if platform == 'osx':
 
 elif platform == 'linux':
     env.Append(CCFLAGS = ['-fPIC', '-g','-O3', '-std=c++14'])
+    env.Append(LINKFLAGS = ['-ldl', '-lpthread', '-Wl,--no-undefined'])
 
     final_lib_path = final_lib_path + 'x11/'
 
