@@ -6,4 +6,4 @@
 	url = https://github.com/GodotNativeTools/godot-cpp
 [submodule "example"]
 	path = example
-	url = git@github.com:nikibobi/godot-agones-example.git
+	url = https://github.com/nikibobi/godot-agones-example
